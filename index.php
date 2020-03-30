@@ -26,6 +26,5 @@
 <input type="submit" value="Salvar" class="btn btn-success">
 </form>
 </div>
-    
 </body>
 </html>
