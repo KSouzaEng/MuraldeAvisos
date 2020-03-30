@@ -1,6 +1,6 @@
 <?php
 
-class Avisos{
+class Aviso{
 
     public $titulo;
     public $datacriacao;
@@ -24,27 +24,27 @@ class Avisos{
 
     public function getDataCriacao () {
 
-        return $this->datacriacao= $datacriacao;
+        return $this->datacriacao;
     }
 
-    public function setDataTermino($datacriacao){
+    public function setDataTermino($datatermino){
 
         $this->datatermino = $datatermino;
     }
 
     public function getDataTermino () {
 
-        return $this->datatermino = $datatermino;
+        return $this->datatermino;
     }
 
-    public function setDescricao($datacriacao){
+    public function setDescricao($descricao){
 
         $this->descricao = $descricao;
     }
 
-    public function getDataDescricao() {
+    public function getDescricao() {
 
-        return $this->datacriacao= $datacriacao;
+        return $this->datacriacao;
     }
 
 }

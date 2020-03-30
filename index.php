@@ -15,16 +15,24 @@
 </nav>
 <div class="container " >
 <form method="POST">
-<label for="aviso" class="font-weight-bold mb-2">Titulo do Aviso :</label>
-<input type="text" class="form-control mb-2" placeholder="Título " >
-<label for="datacriacao" class="font-weight-bold">Informe a data de Criação:</label>
-<input type="date" name="data" class="form-control mb-2" placeholder="Data de Criação" >
-<label for="datatermino" class="font-weight-bold">Informe a data de Termino do Aviso:</label>
-<input type="date" name="data" class="form-control mb-2" placeholder="Data de Termino" >
-<label for="aviso" class="font-weight-bold">Descrição :</label>
-<textarea class="form-control mb-2" id="Descricao" rows="4" ></textarea>
-<input type="submit" value="Salvar" class="btn btn-success">
-</form>
-</div>
+<label for="aviso"  class="font-weight-bold mb-2" >Titulo do Aviso :</label>
+
+<input type="text" name="titulo" class="form-control mb-2" placeholder="Título " >
+
+
+<label for="aviso" class="font-weight-bold" >Descrição :</label>
+
+<textarea class="form-control mb-2" name="descricao" rows="4"  ></textarea>
+
+<button type="submit" class="btn  btn-primary">Salvar</button>
+<a href="?comando=limparLista" class="btn  btn-danger">Limpar Lista</a>
+</form><br>
+
 </body>
+<?php
+    require 'Aviso.php';
+    require 'Funcoes.php';
+
+    listarAvisos();
+?>
 </html>
