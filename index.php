@@ -11,7 +11,7 @@
 </head>
 <body>
 <nav class="navbar navbar-dark bg-dark mb-2">
-  <a class="navbar-brand" href="#">Cadastro de Avisos</a>
+  <a class="navbar-brand" href="#">Painel de Avisos</a>
 </nav>
 <div class="container " >
 <form method="POST">
@@ -19,13 +19,21 @@
 
 <input type="text" name="titulo" class="form-control mb-2" placeholder="Título " >
 
+<label for="email" class="font-weight-bold" >Email :</label>
 
-<label for="aviso" class="font-weight-bold" >Descrição :</label>
+<input type="email" name="email" class="form-control mb-2" placeholder="Email " >
+
+<label for="telefone" class="font-weight-bold" >Telefone :</label>
+
+<input type="tel" name="telefone" class="form-control mb-2" placeholder="Telefone " >
+
+
+<label for="descricao" class="font-weight-bold" >Descrição :</label>
 
 <textarea class="form-control mb-2" name="descricao" rows="4"  ></textarea>
 
-<button type="submit" class="btn  btn-primary">Salvar</button>
-<a href="?comando=limparLista" class="btn  btn-danger">Limpar Lista</a>
+<button  type="submit" class="btn  btn-primary  ">Salvar</button>
+<a href="?comando=limparLista" class="btn  btn-danger">Limpar Avisos</a>
 </form><br>
 
 </body>
