@@ -3,8 +3,8 @@
 class Aviso{
 
     public $titulo;
-    public $datacriacao;
-    public $datatermino;
+    public $email;
+    public $telefone;
     public $descricao;
 
 
@@ -17,26 +17,23 @@ class Aviso{
         return $this->titulo ;
     }
 
-    public function setDataCriacao($datacriacao){
-
-        $this->datacriacao = $datacriacao;
+    public function setEmail($email){
+        $this->email = $email;
     }
 
-    public function getDataCriacao () {
+    public function getEmail () {
 
-        return $this->datacriacao;
+        return $this->email ;
+    }
+    public function setTelefone($telefone){
+        $this->telefone = $telefone;
     }
 
-    public function setDataTermino($datatermino){
+    public function getTelefone () {
 
-        $this->datatermino = $datatermino;
+        return $this->telefone ;
     }
-
-    public function getDataTermino () {
-
-        return $this->datatermino;
-    }
-
+    
     public function setDescricao($descricao){
 
         $this->descricao = $descricao;
@@ -44,7 +41,7 @@ class Aviso{
 
     public function getDescricao() {
 
-        return $this->datacriacao;
+        return $this->descricao;
     }
 
 }
